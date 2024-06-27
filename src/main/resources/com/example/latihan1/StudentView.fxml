@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.HBox?>
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.latihan1.Controller.StudentController">
+    <TableView fx:id="table">
+        <columns>
+            <TableColumn text="NIM" fx:id="nimColumn"/>
+            <TableColumn text="Nama" fx:id="namaColumn"/>
+            <TableColumn text="Semester" fx:id="semesterColumn"/>
+        </columns>
+    </TableView>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Add" onAction="#handleAdd"/>
+        <Button text="Edit" onAction="#handleEdit"/>
+        <Button text="Delete" onAction="#handleDelete"/>
+    </HBox>
+</VBox>
